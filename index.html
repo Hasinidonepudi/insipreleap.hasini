@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cases</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card"  >
+    <div class="card-header">
+      <h2>Your Cases</h2>
+      <a href="#">View ↗</a>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Case Manager</th>
+        </tr>
+      </thead>
+      <tbody id="case-list">
+        <!-- Rows will be inserted here by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+   
+  <div class="emp">
+    <div class="header">
+      <h2>Employees</h2>
+      <div class="header-actions">
+        <a href="#" class="view-link">View ↗</a>
+        <input type="text" id="search" placeholder="🔍 Search...">
+      </div>
+    </div>
+
+    <ul class="employee-list" id="employeeList">
+      <li class="employee">
+        <div class="avatar">JK</div>
+        <div class="info">
+          <p class="name">Jacob Kowalski</p>
+          <p class="role">React Developer <span class="tag dev">Development</span></p>
+        </div>
+      </li>
+
+      <li class="employee">
+        <img src="https://i.pravatar.cc/40?img=5" class="avatar-img" alt="">
+        <div class="info">
+          <p class="name">Jane Doe</p>
+          <p class="role">Product Designer <span class="tag design">Design</span></p>
+        </div>
+      </li>
+
+      <li class="employee">
+        <div class="avatar">JG</div>
+        <div class="info">
+          <p class="name">James Gray</p>
+          <p class="role">Back-end Developer <span class="tag dev">Development</span></p>
+        </div>
+      </li>
+
+      <li class="employee">
+        <img src="https://i.pravatar.cc/40?img=12" class="avatar-img" alt="">
+        <div class="info">
+          <p class="name">Gintaras Arstikaitis</p>
+          <p class="role">Senior Full-stack Developer <span class="tag dev">Development</span></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+ 
+
+  <div class="reminder-panel">
+    <h2>Reminders</h2>
+
+    <div class="reminder-item">
+      <div class="reminder-title">WARE Brand Meeting
+        <span class="new-badge">new</span>
+      </div>
+      <div class="reminder-time">Today — 11:45 am</div>
+    </div>
+
+    <div class="reminder-item">
+      <div class="reminder-title">Design Talk
+        <span class="new-badge">new</span>
+      </div>
+      <div class="reminder-time">Today — 2:30 pm</div>
+    </div>
+
+    <div class="reminder-item">
+      <div class="reminder-title">Jacob Kowalski
+        <span class="new-badge">new</span>
+      </div>
+      <div class="reminder-time">Today</div>
+    </div>
+
+    <div class="reminder-item">
+      <div class="reminder-title">Company meeting</div>
+      <div class="reminder-time">In 2 days — 11:30 am</div>
+    </div>
+  </div>
+
+
+  <!-- Page content ... -->
+
+  <!-- Bottom-right calendar widget -->
+  <aside class="calendar-card" aria-label="Calendar">
+    <header class="card-head">
+      <h2 class="title">Calendar</h2>
+      <a class="view-link" href="#">View Calendar ↗</a>
+    </header>
+
+    <div class="meta">
+      <div class="month">
+        <button class="chev" aria-label="Previous month">‹</button>
+        <div class="month-name">AUGUST 2025</div>
+        <button class="chev" aria-label="Next month">›</button>
+      </div>
+      <ul class="legend">
+        <li><span class="dot dot-public"></span>Public Holiday</li>
+        <li><span class="dot dot-vacation"></span>Vacation</li>
+        <li><span class="dot dot-birthday"></span>Birthday</li>
+        <li><span class="dot dot-deadline"></span>Deadline</li>
+      </ul>
+    </div>
+
+    <div class="grid">
+      <div class="dow">MON</div><div class="dow">TUE</div><div class="dow">WED</div>
+      <div class="dow">THU</div><div class="dow">FRI</div><div class="dow">SAT</div><div class="dow">SUN</div>
+
+      <!-- leading blanks to align March 2023 -->
+      <div class="cell blank"></div><div class="cell blank"></div>
+      <div class="cell">1</div><div class="cell">2</div><div class="cell">3</div>
+      <div class="cell">4</div><div class="cell">5</div>
+
+      <div class="cell">6</div><div class="cell">7</div><div class="cell">8</div>
+      <div class="cell active">9
+        <div class="pill"></div>
+        <div class="dots">
+          <span class="dot dot-birthday"></span>
+          <span class="dot dot-public"></span>
+          <span class="dot dot-vacation"></span>
+        </div>
+      </div>
+      <div class="cell">10</div><div class="cell">11</div><div class="cell">12</div>
+
+      <div class="cell">13</div><div class="cell">14</div><div class="cell">15</div>
+      <div class="cell">16</div><div class="cell">17
+        <div class="dots">
+          <span class="dot dot-birthday"></span>
+          <span class="dot dot-deadline"></span>
+        </div>
+      </div>
+      <div class="cell">18</div><div class="cell">19</div>
+
+      <div class="cell">20</div><div class="cell">21</div><div class="cell">22</div>
+      <div class="cell">23</div><div class="cell">24</div><div class="cell">25</div><div class="cell">26</div>
+
+      <div class="cell">27</div><div class="cell">28</div><div class="cell">29</div>
+      <div class="cell">30</div><div class="cell">31</div>
+      <div class="cell blank"></div><div class="cell blank"></div>
+    </div>
+  </aside>
+
+<div class="car documents">
+  <!-- Header -->
+    <h2>Documents</h2>
+  
+  <div class="car -header">
+
+  </div>
+
+  <!-- Status Boxes -->
+  <div class="doc-status">
+    <div class="status-box overdue">
+      <p class="title">Overdue</p>
+      <p class="count">3 documents</p>
+    </div>
+    <div class="status-box outstanding">
+      <p class="title">Outstanding</p>
+      <p class="count">24 documents</p>
+    </div>
+    <div class="status-box total">
+      <p class="title">Total Read</p>
+      <p class="count">27 documents</p>
+    </div>
+  </div>
+
+  <!-- Latest Documents -->
+  <div class="latest-docs">
+    <p class="section-title">LATEST DOCUMENTS</p>
+    <ul>
+    
+      <li>
+         <span><span class="icon red">📄</span> An Overdue document name</span>
+        <span class="close">✖</span>
+      </li>
+      <li>
+        <span><span class="icon blue">📄</span> Another file</span>
+        <span class="close">✖</span>
+      </li>
+      <li>
+        <span><span class="icon yellow">📄</span> Outstanding file</span>
+        <span class="close">✖</span>
+      </li>
+    </ul>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
